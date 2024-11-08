@@ -17,12 +17,32 @@ To set up the project, follow these steps:
 
 1. **Clone the repository**:
 
-   ```bash git clone [repository-url]
+   ```
+   git clone [repository-url]
 
-2. Navigate to the project directory:
+   ```
+2. **Navigate to the project directory**:
 
-````bash cd ApplyDigital
+```
+cd ApplyDigital
+```
 
-3. Install dependencies
-```bash npm install
-````
+3. **Install dependencies**
+```
+npm install
+```
+
+# Running the Tests
+
+## Using Cypress UI
+To run the tests interactively using the Cypress Test Runner, execute:
+
+```
+npx cypress open
+```
+
+## Running Tests in Headless Mode
+For a headless execution, which is ideal for CI/CD pipelines, run:
+```
+npx cypress run
+```
