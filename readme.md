@@ -19,8 +19,6 @@ To set up the project, follow these steps:
 
    ```bash git clone [repository-url]
 
-   ```
-
 2. Navigate to the project directory:
 
 ````bash cd ApplyDigital
