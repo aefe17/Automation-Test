@@ -5,6 +5,11 @@ const fs = require("fs");
 const path = require("path");
 
 module.exports = defineConfig({
+  setupNodeEvents(on, config){
+    require('cypress-mochawesome-reporter/plugin')(on);
+    return config;
+  },
+  
   reporter: "cypress-mochawesome-reporter",
   reporterOptions: {
     reportDir: "reports/mochawesome-report",
@@ -12,6 +17,8 @@ module.exports = defineConfig({
     html: true,
     json: true,
     charts: true,
+    embeddedScreenshots: true,
+    inlineAssets: true,
   },
 
   e2e: {

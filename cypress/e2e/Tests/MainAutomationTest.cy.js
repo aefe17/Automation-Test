@@ -27,6 +27,7 @@ describe("Automation Exercise - User Flow", () => {
         cy.viewport(viewport.width, viewport.height);
         //Step 1: Visit the website
         cy.visit("https://automationexercise.com");
+        cy.screenshot("products-page"); // Screenshot after navigating to Products
       });
 
       it("Automated User Flow Retail Page ", () => {

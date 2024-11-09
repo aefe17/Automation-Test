@@ -11,6 +11,7 @@
   },
   "scripts": {
     "test": "npx cypress run",
-    "report": "npx cypress run --reporter cypress-mochawesome-reporter"
+    "report": "npx cypress run --reporter cypress-mochawesome-reporter",
+    "cypress:open": "npx cypress open"
   }
 }
