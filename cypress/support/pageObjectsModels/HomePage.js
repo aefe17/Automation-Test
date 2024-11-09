@@ -2,7 +2,6 @@ class HomePage {
   navigateToProducts() {
     // Click on the Products link
     cy.get('a[href="/products"]').click();
-    cy.screenshot("products-page");
     cy.url().should("include", "/products");
   }
 }
