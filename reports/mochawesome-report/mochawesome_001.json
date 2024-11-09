@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-09T00:31:31.165Z",
+    "end": "2024-11-09T00:31:34.573Z",
+    "duration": 3408,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ef46c322-e468-4c42-a523-a2696bfd5dc9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Tests\\Performance-Accesibility.cy.js",
+      "file": "cypress\\e2e\\Tests\\Performance-Accesibility.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "367e9cb1-ccbd-4495-b03f-4afff2338dc3",
+          "title": "Lighthouse Accessibility and Performance Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should run a Lighthouse audit on the homepage",
+              "fullTitle": "Lighthouse Accessibility and Performance Test should run a Lighthouse audit on the homepage",
+              "timedOut": null,
+              "duration": 1393,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://automationexercise.com\");\ncy.document().then(doc => {\n  const link = doc.createElement(\"link\");\n  link.rel = \"stylesheet\";\n  link.href = \"https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\";\n  doc.head.appendChild(link);\n});\n// Run a Lighthouse audit and save results\ncy.lighthouse({\n  performance: 20,\n  accessibility: 84,\n  \"best-practices\": 67,\n  seo: 85\n});",
+              "err": {},
+              "uuid": "019b0961-8b6d-4911-a69b-e15a6fccfff1",
+              "parentUUID": "367e9cb1-ccbd-4495-b03f-4afff2338dc3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "019b0961-8b6d-4911-a69b-e15a6fccfff1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1393,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
