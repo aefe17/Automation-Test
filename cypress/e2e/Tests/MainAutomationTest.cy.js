@@ -8,13 +8,13 @@ import PaymentPage from "../../support/pageObjectsModels/PaymentPage";
 
 // Define standard device viewports
 const viewports = [
-  // { device: "Desktop - Small", width: 1280, height: 800 },
-  // { device: "Desktop - Standard", width: 1366, height: 768 },
+  { device: "Desktop - Small", width: 1280, height: 800 },
+  { device: "Desktop - Standard", width: 1366, height: 768 },
   { device: "Desktop - Large", width: 1920, height: 1080 },
-  // { device: "iPad - Large", width: 1024, height: 1366 },
-  // { device: "Mobile - Small", width: 360, height: 640 },
-  // { device: "Mobile - Medium", width: 375, height: 812 },
-  // { device: "Mobile - Large", width: 428, height: 926 },
+  { device: "iPad - Large", width: 1024, height: 1366 },
+  { device: "Mobile - Small", width: 360, height: 640 },
+  { device: "Mobile - Medium", width: 375, height: 812 },
+  { device: "Mobile - Large", width: 428, height: 926 },
 ];
 // Set the random Quantity for the product
 const randomQuantity = Math.floor(Math.random() * 20) + 1;
